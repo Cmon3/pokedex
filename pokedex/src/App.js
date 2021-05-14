@@ -27,6 +27,9 @@ function App() {
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
+//import PokemonMoves from "./PokemonMoves";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 
 function App() {
   function logWhenClicked() {
@@ -37,6 +40,8 @@ function App() {
     <Logo handleClick={logWhenClicked} appName="Pokedex"/>
     <BestPokemon abilities={["Anticipation", "Adaptability", "Run-Away"]}/>
     <CaughtPokemon number={30} date={new Date().toLocaleDateString()}/>
+    <PokemonMovesSelector />
+    <PokemonCity />
     </div>
   )
 }
